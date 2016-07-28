@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<namingPatternsList>
+    <pattern id="fantasy">
+    <component>Massiva Gandogar Kithri Tristan Tyr Xyki Zea Brini Richard Haestan Morgana Brünor Sylandril Coramur Noshrok Tyloniakles Rhaxalius Robin Baomakh Leonato Fjolnr Asulf Rurik Innae Kamali Gilvan Krom Esra Thalaën Adamant Astamalia Aelius Ioame Kenda Carthas Nickold Pick Remini Artor Feodora Nuuri Fenbalar Remy Rey Imke Jubrayl Karja Tyden  Yin_Wen Jiao Shamir Nathan Limona Gamorr Fentin Milfira Patrenos Murasaki Satori Wyndlyn Adil Akji  Akomy Alaria Allokair Altun Angus Araneon Argspan Arinsiar Ashkos Ashuntira Balusar Bardak Bengar Bennit Bereu Beris Berthun  Biska Bogrinn Boron  Brahjan Brinhelma Cari Casta Chend Choltar Coniar Darcon Dilan Donlen During Eilis Fensal Elain Eldrias Erinna Erron Eyskinna Fanras Felparr Feych Firee Fylora Galadriel Garek Ghondes Glamairie Gmork Gnor Hagarn Hakronn Halag Harlund Hugi  Huld  Hulth Hun Hundarim Entrililid Huraths Hylling Imra Belabranta Isadera Jaed Jaix Joreg Kadron Kalba'kur Kasimar Kenachi Koed Kyan Lad Hajoise Aris Maya Lark Logmann Lonna Metrios Raginmun Luer  Lys Min  Mirath  Mirtek Morgion Musta Niljana Oddrin Olive  Omantiel  Poof Prinn Qualadras Res  Rewel  Rikar Rosa Rutis Seklin'kor Senfor Siim  Karl Skor Skyla Soleman Soltis Stanach Sulin Suud Takk Tasghur Tathlosar  Te'ira Tharn Therandril Thok Tijak Tilira Tonar Tondar Toralon  Toshigi Tren  Turku Tybalt  Uglok Urenil Vehra Vychan Weldschatten  Will Winnifred Ybaia Zareius Swende Contz Wiprecht Diether Reinhart Gilbrecht Wenzel Henne Emmerich Heilmann Gernant   Carius  Wolrad  Parzifal  Wichmann Thankmar Odo Tanno  Jobst Dedi  Dietbold Maincia Brun Hathwich Liudolf  Altfrid Adolar Erenfrid Willigis  Basileios Hinkmar Enslin  Wernhard Pandulf Landulf Dedi Werinher Adaldag Giselher Thiedrich Hildeward Volkmar Unni Rimbert Hoger Reginwart  Alwin Conrad Colco Varro  Rodrik  Efrieda  Alfrieda Taran  Finn  Raschzok Sigurd  Taakrudnir Thorr Joriel Lavinia Halfdan Valdaron Krul Tolan Papyrex Zyphiron </component>
+    <component>wolfs bären drachen tief dunkel stark wisper gold eisen silber schnell winter sommer herbst leise nacht rot blau grün schwarz weiß rau laut riesen blüten wein knochen</component>
+    <component>bier wasser wind mond stein gang hammer freude regen fels fluss nacht feste tritt markt fall sang schwert schädel quell tanz see herz gard helm blatt bogen weise blut axt</component>
+       
+    <structure ratio="10">$0</structure>
+    <structure ratio="5">$0, Kind von $0</structure>
+    <structure ratio="5">$0 von /1$2</structure>
+    <structure ratio="5">$0 aus /1$2</structure>
+    <structure ratio="7">$0 /1$2</structure>
+    <structure ratio="4">$0 vom Clan /1$2</structure>
+    <structure ratio="3">$0 /1$2-/1$2</structure>
+    </pattern>
+</namingPatternsList>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.input.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.pomp31us.rpgcharsfx.MainFrameController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="true" text="_File">
+               <items>
+                  <MenuItem mnemonicParsing="true" onAction="#newFile" text="_New File" />
+                  <MenuItem mnemonicParsing="true" onAction="#openFile" text="_Open" />
+                  <MenuItem mnemonicParsing="true" onAction="#saveFile" text="_Save" />
+                  <MenuItem mnemonicParsing="true" onAction="#saveAsFile" text="Save _as" />
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="true" text="_Edit">
+            <items>
+                  <MenuItem mnemonicParsing="true" onAction="#undo" text="_Undo" />
+                  <MenuItem mnemonicParsing="true" onAction="#redo" text="_Redo" />
+                  <MenuItem mnemonicParsing="true" onAction="#copy" text="Cop_y" />
+                  <MenuItem mnemonicParsing="true" onAction="#paste" text="_Paste" />
+                  <MenuItem mnemonicParsing="true" onAction="#cut" text="C_ut" />
+              <MenuItem mnemonicParsing="true" onAction="#newChar" text="Add _Character" />
+                  <MenuItem mnemonicParsing="true" onAction="#randomChar" text="_Random Character" />
+                  <MenuItem mnemonicParsing="true" onAction="#addAbility" text="Add _Ability" />
+                  <MenuItem mnemonicParsing="true" onAction="#editChar" text="_Edit Character" />
+                  <MenuItem mnemonicParsing="true" onAction="#editAbility" text="Edi_t Ability" />
+                  <MenuItem mnemonicParsing="true" onAction="#removeNode" text="_Remove Item" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="true" text="_Campaign">
+              <items>
+                  <MenuItem mnemonicParsing="true" text="_Systems" />
+                <MenuItem mnemonicParsing="true" onAction="#setNamingPattern" text="_Naming Pattern" />
+                  <MenuItem mnemonicParsing="true" onAction="#showXML" text="Show _XML" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="true" text="_Help">
+            <items>
+              <MenuItem mnemonicParsing="true" onAction="#help" text="Open _Help in Browser" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <TreeView fx:id="campTree" onMousePressed="#loadInfo" prefHeight="375.0" prefWidth="180.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets right="5.0" top="5.0" />
+         </BorderPane.margin></TreeView>
+   </left>
+   <right>
+      <ScrollPane prefViewportHeight="342.0" prefViewportWidth="197.0">
+         <content>
+            <TextArea fx:id="logText" editable="false" prefHeight="347.0" prefWidth="197.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="5.0" top="5.0" />
+               </BorderPane.margin>
+               <padding>
+                  <Insets left="5.0" top="5.0" />
+               </padding>
+            </TextArea>
+         </content>
+         <BorderPane.margin>
+            <Insets left="5.0" top="5.0" />
+         </BorderPane.margin>
+      </ScrollPane>
+   </right>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="70.0" prefWidth="249.0">
+               <children>
+                  <Label text="Check Selected (with optional modifer)" />
+                  <TextField fx:id="modifier" onAction="#checkSelected" />
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Region prefHeight="77.0" prefWidth="176.0" HBox.hgrow="ALWAYS" />
+                        <Button mnemonicParsing="false" onAction="#checkSelected" prefHeight="25.0" prefWidth="75.0" text="Check" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="70.0" prefWidth="249.0">
+               <children>
+                  <Label text="Check Independent" />
+                  <TextField fx:id="freeCheck" onAction="#checkFreely" />
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Region prefHeight="77.0" prefWidth="176.0" HBox.hgrow="ALWAYS" />
+                        <Button mnemonicParsing="false" onAction="#checkFreely" prefHeight="25.0" prefWidth="75.0" text="Check" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <TextArea fx:id="infoBox" editable="false" onMouseClicked="#infoBoxClicked" prefHeight="212.0" prefWidth="240.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox prefHeight="28.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Region prefHeight="28.0" prefWidth="186.0" />
+            <CheckBox fx:id="infoBoxReadOnly" mnemonicParsing="false" onAction="#readOnlyClicked" selected="true" text="Read Only" />
+            <Region prefHeight="28.0" prefWidth="260.0" HBox.hgrow="ALWAYS" />
+            <Button mnemonicParsing="false" onAction="#clearLog" text="Clear Log" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
